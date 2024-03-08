@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 40;
+            padding: 0;
+            background-color:white;
+            color: white;
+        }
+
+        
+        header {
+            background-color:rgb(0, 4%, 44%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            
+        }
+
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        header nav ul li a:hover {
+            color: gray;
+        }
+
+       
+        section {
+            max-width: 1400px;
+            margin: 10px auto;
+            padding: 20px;
+            background-color: black;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            color: white;
+            font-size: 22px;
+        }
+        .image{
+            border: 5px solid white;
+    border-radius:100%;
+    height: 350px;
+    padding: 5px;
+    width: 350px ;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    margin-left: 850px;
+    margin-top: 100px;
+        }
+
+        h1, h2, p {
+            margin-bottom: 20px;
+        }
+
+        .skills, .certification, .projects {
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid white;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: hsl(0, 4%, 44%);
+        }
+        .fixed-header {
+      position: fixed;
+      font-size: 20px;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color:  rgb(99, 86, 86);
+      color: white;
+      padding: 1px;
+      text-align: center;
+      z-index: 50; 
+    }
+
+        
+        footer {
+            text-align: center;
+            font-size: 25px;
+            padding: 20px;
+            background-color: rgb(99, 86, 86);
+            color: white;
+            box-shadow: 0 0 10px rgba(209, 201, 201, 0.1);
+        }
+
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        .position-absolute{
+            position:absolute;
+           position:fixed;
+           bottom:0;
+           right: 50;
+           top:50%;
+           left:0%;
+        }
+    </style>
+    
+</head>
+<body>
+        <header class="fixed-header">
+            <h1>P.KAVIYA</h1>
+            <p>MERNSTACK DEVELOPER</p>
+            <div class="position-absolute"></div>
+            
+        
+        <nav>
+            <ul>
+                <li><a href="#about" color="blue">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certification">Certification</a></li>
+                
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="image-container" style="text-align: center;"><br><br><br><br><br><br>
+        <div class="image" data-aos="fade-center" style="display: inline-block; margin: 0 auto;">
+            <img src="profile.jpg" alt="photo" width="350" height="350">
+        </div>
+    </div>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>"As a recent graduate eager to embark on a journey, I am passionate about leveraging my skills and creativity to contribute fresh perspectives and innovative solutions. Through my portfolio, I aim to demonstrate my dedication to continuous learning and my commitment to excellence while seeking opportunities to grow and collaborate within the industry."</p>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML <img src="https://clipartcraft.com/images/html5-logo-png-transparent-5.png" alt="html" width="30"></li>
+            <li>CSS<img src="https://th.bing.com/th/id/OIP.tAvAD5lCtDJSjywplxd37QHaEo?rs=1&pid=ImgDetMain.png" alt="css" width="30"></li>
+            <li>Java <img src="https://th.bing.com/th/id/OIP.bDK7QP5XrVzaPTpQZA97wAHaEo?rs=1&pid=ImgDetMain.png" alt="java" width="30"></li>
+            <li>C <img src="https://www.pngitem.com/pimgs/m/31-312155_c-programming-language-logo-hd-png-download.png" alt="c  " width="28" height="15"></li>
+        </ul>
+    </section>
+
+    <section id="education" class="education">
+        <h2>Education</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>S.NO</th>
+                    <th>Qualification</th>
+                    <th>Name of the Institute</th>
+                    <th>Percentage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>B.E.ECE</td>
+                    <td>Sri Eshwar College of Engineering</td>
+                    <td>8.2</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>12th</td>
+                    <td>Siwalik Matric Hr. Sec. School</td>
+                    <td>87</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>10th</td>
+                    <td>Siwalik Matric Hr. Sec. School</td>
+                    <td>95</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="certification" class="certification">
+        <h2>Certification</h2>
+        <ul>
+            <li>Data structure using C/C++ - UDEMY</li>
+            <li>Programming in Java - NPTEL</li>
+        </ul>
+    </section>
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>E-learning Management System <br>
+                <img src="https://th.bing.com/th/id/OIP.oApLgs5t0AyDi_QO38l_uAHaE8?rs=1&pid=ImgDetMain.png"alt="lms"width="350"><br>
+                To know more about the project<span><a href="http://127.0.0.1:5500/Elms.html" target="_blank">Click here!!</a></li></span><br>
+            <li> Video Description Creator <br>
+                <img src="https://th.bing.com/th/id/R.8e0bd6eba7703584fe9d02a4392e2fd0?rik=kVluap0ye3Xu5g&riu=http%3a%2f%2fresidencestyle.com%2fwp-content%2fuploads%2f2019%2f07%2fBenefits-of-Audio-to-Text-Converter-Online.png&ehk=PZzd0e%2fMEYmkAxdKeJwMt5LO7BjjWoitTdJmk868M48%3d&risl=&pid=ImgRaw&r=0"alt="video" width="350"> <br>To know more about it<a href="http://127.0.0.1:5500/videodescription.html" target="_blank">Click here</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Contact: kaviya.p2022ece@sece.ac.in</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/kaviya-periasamy-5926b4259" target="_blank">https://www.linkedin.com/in/kaviya-periasamy-5926b4259</a></p>
+    </footer>
+</body>
+</html>
